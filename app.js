@@ -7,15 +7,18 @@ const app = Vue.createApp({
                 { 
                     title: 'galloways justice', 
                     author: 'melodee elliott', 
-                    cover: "assets/book1.png"},
+                    cover: "assets/book1.png",
+                    isFav: true},
                 { 
                     title: 'us', 
                     author: 'david nicholls',
-                    cover: "assets/book2.png" },
+                    cover: "assets/book2.png",
+                    isFav: false },
                 { 
                     title: 'a teaspoon earth and sea', 
                     author: 'dina nayeri',
-                    cover: "assets/book3.png"},
+                    cover: "assets/book3.png",
+                    isFav: true},
             ]
         }
     },
