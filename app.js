@@ -5,6 +5,12 @@ const app = Vue.createApp({
             author: 'brandon sanderson',
             age: 45
         }
+    },
+    methods: {
+        changeTitle(title) {
+            // this.title = "words of radiance"
+            this.title = title
+        }
     }
 })
 
