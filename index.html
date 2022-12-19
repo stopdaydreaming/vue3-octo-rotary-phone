@@ -10,12 +10,18 @@
 <body>
     <h1>hello vue 😀</h1>
     <div id="app">
-        <p>{{ title }} - {{ author }} - {{ age }}</p>
-        <!-- <button v-on:click="age++">increase age</button> -->
-        <!-- <button v-on:click="age--">decrease age</button> -->
-        <!-- <button @click="title = 'Title Updated'">Change Book Title</button>  -->
-        <!-- <button @click="changeTitle">Change Book Title</button>  -->
-        <button @click="changeTitle('New Title')">Change Book Title</button> 
+        <div v-if="showBooks">
+            <p>{{ title }} - {{ author }} - {{ age }}</p>
+        </div>
+        <button @click="toggleShowBooks">
+            <span v-if="showBooks">Hide Books</span>
+            <span v-else>Show Books</span>
+            <!-- <span v-if="!showBooks">Show Books</span> -->
+        </button>
+
+        <div v-show="showBooks">
+            <em>currently showing books</em>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
