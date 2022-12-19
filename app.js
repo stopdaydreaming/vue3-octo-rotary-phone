@@ -1,11 +1,21 @@
 const app = Vue.createApp({
     data(){
         return{
+            url: "google.com",
             showBooks: true,
             books: [
-                { title: 'the final empire', author: 'brandon sanderson' },
-                { title: 'lost lover', author: 'peg russell' },
-                { title: 'field of dreams', author: 'lesley murch' },
+                { 
+                    title: 'galloways justice', 
+                    author: 'melodee elliott', 
+                    cover: "assets/book1.png"},
+                { 
+                    title: 'us', 
+                    author: 'david nicholls',
+                    cover: "assets/book2.png" },
+                { 
+                    title: 'a teaspoon earth and sea', 
+                    author: 'dina nayeri',
+                    cover: "assets/book3.png"},
             ]
         }
     },

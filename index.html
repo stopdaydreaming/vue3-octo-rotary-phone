@@ -10,10 +10,16 @@
 </head>
 <body>
     <h1>hello vue 😀</h1>
+
     <div id="app">
+        <a :href="url">best website ever</a>
+        <div>
+            <img :src="photo" :alt="photoText">
+        </div>
         <div v-if="showBooks">
            <ul>
             <li v-for="book in books">
+                <img :src="book.cover" :alt="bookTitle">
                 <h3>{{ book.title }}</h3>
                 <p>{{ book.author }}</p>
             </li>
