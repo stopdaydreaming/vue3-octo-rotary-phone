@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJs 3 Sandbox</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
@@ -16,12 +17,12 @@
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
             <span v-else>Show Books</span>
-            <!-- <span v-if="!showBooks">Show Books</span> -->
         </button>
-
-        <div v-show="showBooks">
-            <em>currently showing books</em>
-        </div>
+        <hr>
+        <div class="box" v-on:mouseover="handleEvent($event, 5)">mouseover</div>
+        <div class="box" @mouseleave="handleEvent">mouseleave</div>
+        <div class="box" @dblclick="handleEvent">double-click</div>
+        <div class="box" @mousemove="handleMousemove">position - {{ x }} {{ y }}</div>
     </div>
     <script src="app.js"></script>
 </body>
