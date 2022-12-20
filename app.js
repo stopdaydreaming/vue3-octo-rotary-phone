@@ -23,8 +23,9 @@ const app = Vue.createApp({
         }
     },
     methods: {
-        toggleShowBooks(){
-            this.showBooks = !this.showBooks
+        toggleIsFavs(){
+            // class="{ fav: book.isFav }"
+            console.log("is fav")
         },
     }
 })
